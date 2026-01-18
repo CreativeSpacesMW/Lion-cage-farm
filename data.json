@@ -1,1 +1,71 @@
-5
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Soy Beans",
+      "category": "Cash Crop",
+      "description": "High-grade non-GMO soy beans. Our soybeans are cultivated using sustainable farming practices, resulting in high protein content and excellent germination rates. Perfect for both human consumption and animal feed.",
+      "icon": "fas fa-seedling"
+    },
+    {
+      "id": 2,
+      "name": "Maize",
+      "category": "Cash Crop",
+      "description": "Premium white maize, sun-dried to perfection. We produce maize with optimal moisture content, ensuring longer shelf life and superior taste. Ideal for milling, animal feed, and industrial uses.",
+      "icon": "fas fa-corn"
+    },
+    {
+      "id": 3,
+      "name": "Groundnuts",
+      "category": "Cash Crop",
+      "description": "Nutrient-rich Malawian groundnuts. Our groundnuts are hand-selected for quality, with high oil content and rich flavor. Grown in mineral-rich soils for maximum nutritional value.",
+      "icon": "fas fa-peanuts"
+    },
+    {
+      "id": 4,
+      "name": "Fresh Milk",
+      "category": "Produce",
+      "description": "Daily farm-fresh dairy milk from our pasture-raised cows. Produced under strict hygiene standards, our milk is rich in calcium and vitamins, with no artificial additives or preservatives.",
+      "icon": "fas fa-wine-bottle"
+    },
+    {
+      "id": 5,
+      "name": "Beef & Goat Meat",
+      "category": "Produce",
+      "description": "Ethically raised, high-quality meat. Our animals are grass-fed and raised in spacious pastures, resulting in tender, flavorful meat that meets international food safety standards.",
+      "icon": "fas fa-drumstick-bite"
+    }
+  ],
+  "staff": [
+    {
+      "name": "Farm Manager",
+      "role": "Operations Oversight",
+      "description": "Oversees all farm operations, ensuring efficient production and quality control."
+    },
+    {
+      "name": "Lead Agronomist",
+      "role": "Crop Health & Yield",
+      "description": "Manages crop health, soil quality, and implements sustainable farming practices."
+    },
+    {
+      "name": "Logistics Head",
+      "role": "Distribution & Courier Liaison",
+      "description": "Coordinates product distribution, transportation, and supply chain management."
+    },
+    {
+      "name": "Quality Control Officer",
+      "role": "Product Standards",
+      "description": "Ensures all products meet international quality and safety standards."
+    },
+    {
+      "name": "Livestock Supervisor",
+      "role": "Animal Welfare",
+      "description": "Manages livestock health, breeding programs, and ethical farming practices."
+    },
+    {
+      "name": "Export Coordinator",
+      "role": "International Markets",
+      "description": "Handles export documentation, compliance, and international client relations."
+    }
+  ]
+}
