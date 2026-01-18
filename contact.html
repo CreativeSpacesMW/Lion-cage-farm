@@ -1,1 +1,162 @@
-t
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lion Cage Global Farm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav-container container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-paw logo-icon"></i>
+                <span>Lion Cage Global Farm</span>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="section-title">Get In Touch</h1>
+            <div class="about-content">
+                <p>We're here to help with your agricultural needs. Whether you're interested in our products, want to discuss partnership opportunities, or have any questions, our team is ready to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" style="padding: var(--spacing-xl) 0;">
+        <div class="container contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 5px;">Our Location</h3>
+                        <p>Lilongwe Agricultural Zone<br>Malawi, Central Africa</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 5px;">Phone Number</h3>
+                        <p>+265 XXX XXX XXX<br>Monday - Friday, 8:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 5px;">Email Address</h3>
+                        <p>info@lioncagefarm.com<br>sales@lioncagefarm.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock contact-icon"></i>
+                    <div>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 5px;">Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 style="color: var(--primary-dark); margin-bottom: var(--spacing-md);">Send Us a Message</h2>
+                <form id="contactForm" onsubmit="return sendToWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name *</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-interest" class="form-label">Product Interested In *</label>
+                        <select id="product-interest" class="form-input" required>
+                            <option value="">Select a product</option>
+                            <option value="Soy Beans">Soy Beans</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Groundnuts">Groundnuts</option>
+                            <option value="Fresh Milk">Fresh Milk</option>
+                            <option value="Beef & Goat Meat">Beef & Goat Meat</option>
+                            <option value="Other">Other (Specify in message)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message *</label>
+                        <textarea id="message" class="form-textarea" placeholder="Tell us about your requirements, quantity needed, or any questions you have..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="cta-button" style="width: 100%;">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
+                        <p style="font-size: 0.875rem; color: var(--medium-gray); margin-top: var(--spacing-sm);">
+                            <i class="fas fa-info-circle"></i> Your message will be sent directly to our sales team via WhatsApp for immediate attention.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding: 0 0 var(--spacing-xl);">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <div style="height: 400px; background-color: #f0f0f0; border-radius: var(--radius-lg); overflow: hidden;">
+                <!-- Replace with actual map embed -->
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(35, 31, 32, 0.9), rgba(35, 31, 32, 0.8)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: var(--spacing-md);">
+                    <div>
+                        <h3 style="color: var(--primary-yellow); margin-bottom: var(--spacing-sm);">Lion Cage Global Farm</h3>
+                        <p>Located in the heart of Malawi's agricultural region</p>
+                        <p style="margin-top: var(--spacing-sm);"><i class="fas fa-map-marker-alt"></i> Lilongwe, Malawi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lion Cage Global Farm</h3>
+                    <p>Delivering premium agricultural products from the heart of Malawi to global markets.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Lilongwe, Malawi</p>
+                    <p><i class="fas fa-phone"></i> +265 XXX XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@lioncagefarm.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lion Cage Global Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
