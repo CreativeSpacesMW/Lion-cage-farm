@@ -1,1 +1,133 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Cage Global Farm - Premium Agricultural Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav-container container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-paw logo-icon"></i>
+                <span>Lion Cage Global Farm</span>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Premium Agricultural Excellence</h1>
+            <p class="hero-tagline">Serving global markets with top-quality Malawian produce and cash crops since 2010</p>
+            <a href="#produce" class="cta-button">Explore Our Products</a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview container" style="padding: var(--spacing-xl) 0;">
+        <h2 class="section-title">Why Choose Lion Cage Global Farm</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-leaf card-icon"></i>
+                    <h3>Sustainable Farming</h3>
+                </div>
+                <div class="card-content">
+                    <p>We employ environmentally responsible farming practices that ensure long-term soil health and biodiversity.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-award card-icon"></i>
+                    <h3>Quality Certified</h3>
+                </div>
+                <div class="card-content">
+                    <p>All our products meet international quality standards and are certified for export markets.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-truck card-icon"></i>
+                    <h3>Global Distribution</h3>
+                </div>
+                <div class="card-content">
+                    <p>Efficient logistics network ensuring timely delivery to domestic and international clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produce Section -->
+    <section id="produce" class="produce-section" style="background-color: var(--light-gray); padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <h2 class="section-title">Our Premium Products</h2>
+            
+            <!-- Cash Crops Section -->
+            <div class="category-section" style="margin-bottom: var(--spacing-lg);">
+                <h3 style="color: var(--accent-red); margin-bottom: var(--spacing-md); text-align: center;">
+                    <i class="fas fa-seedling"></i> Cash Crops
+                </h3>
+                <div class="products-grid" id="cash-crops-grid">
+                    <!-- Cash crop cards will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Produce Section -->
+            <div class="category-section">
+                <h3 style="color: var(--accent-red); margin-bottom: var(--spacing-md); text-align: center;">
+                    <i class="fas fa-egg"></i> Farm Produce
+                </h3>
+                <div class="products-grid" id="produce-grid">
+                    <!-- Produce cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lion Cage Global Farm</h3>
+                    <p>Delivering premium agricultural products from the heart of Malawi to global markets.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Lilongwe, Malawi</p>
+                    <p><i class="fas fa-phone"></i> +265 XXX XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@lioncagefarm.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lion Cage Global Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
