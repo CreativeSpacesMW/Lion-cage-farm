@@ -77,11 +77,12 @@ function createProductCard(product) {
 
 // Function to get default icon based on product name
 function getDefaultIcon(productName) {
+    // Map product names to commonly available Font Awesome icons
     const iconMap = {
         'Soy Beans': 'fas fa-seedling',
-        'Maize': 'fas fa-corn',
-        'Groundnuts': 'fas fa-peanuts',
-        'Fresh Milk': 'fas fa-wine-bottle',
+        'Maize': 'fas fa-seedling',
+        'Groundnuts': 'fas fa-leaf',
+        'Fresh Milk': 'fas fa-cow',
         'Beef & Goat Meat': 'fas fa-drumstick-bite'
     };
     
@@ -132,9 +133,19 @@ function createTeamMemberCard(member, index) {
 function sendToWhatsApp(event) {
     event.preventDefault();
     
-    const name = document.getElementById('name').value.trim();
-    const product = document.getElementById('product-interest').value;
-    const message = document.getElementById('message').value.trim();
+    const nameInput = document.getElementById('name');
+    const productSelect = document.getElementById('product-interest');
+    const messageInput = document.getElementById('message');
+    const contactForm = document.getElementById('contactForm');
+
+    if (!nameInput || !productSelect || !messageInput || !contactForm) {
+        console.error('Contact form elements are missing on this page.');
+        return false;
+    }
+
+    const name = nameInput.value.trim();
+    const product = productSelect.value;
+    const message = messageInput.value.trim();
     
     if (!name || !product || !message) {
         alert('Please fill in all required fields.');
@@ -154,7 +165,7 @@ function sendToWhatsApp(event) {
     
     // Optional: Clear form after submission
     setTimeout(() => {
-        document.getElementById('contactForm').reset();
+        contactForm.reset();
     }, 1000);
     
     return false; // Prevent form submission
